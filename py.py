@@ -46,3 +46,31 @@ for x in range(0,8):
 
 
 print("zeinah")
+print("-----------------------------------------------------------")
+
+temp = 0
+for i in range(0, len(numberA)):
+    for j in range(i + 1, len(numberA)):
+        if (numberA[i] < numberA[j]):
+            temp = numberA[i];
+            numberA[i] = numberA[j];
+            numberA[j] = temp;
+
+
+
+print("Array Elements in descending  Order: number A")
+print(numberA)
+
+
+temp2 = 0
+for i in range(0, len(numberB)):
+    for j in range(i + 1, len(numberB)):
+        if (numberB[i] > numberB[j]):
+            temp2 = numberB[i];
+            numberB[i] = numberB[j];
+            numberB[j] = temp2;
+
+
+
+print("Array Elements in Ascending Order: Number B")
+print(numberB)
